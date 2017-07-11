@@ -6,26 +6,30 @@ describe('koa2:app', function () {
 
     beforeEach(function () {
         this.koa2 = helpers
-            .run(path.join(__dirname, '../app'))
-            .withArguments(['testAppName']);
+            .run(path.join(__dirname, '../app'));
     });
 
     describe('default settings', function () {
 
         beforeEach(function (done) {
-            this.koa2.on('end', done);
+            this.koa2
+                .withArguments(['testAppName'])
+                .on('end', done);
         });
 
         it('will generate base files', function () {
             assert.file([
-                'package.json',
                 'README.md',
                 'package-lock.json',
                 'index.js',
                 'build/webpack.config.js',
                 'src/index.js',
-                '.babelrc'    
+                '.babelrc'
             ]);
+        });
+
+        it('will replace appname', function () {
+            assert.fileContent('package.json', new RegExp(`"name": "${this.koa2.generator.appname}"`));
         });
     });
 });
