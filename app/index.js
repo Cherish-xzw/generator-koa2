@@ -10,8 +10,12 @@ module.exports = class extends Generator {
 
     copyFiles() {
         this.fs.copy(
-            this.templatePath(),
-            this.destinationPath()
+            this.templatePath('**'),
+            this.destinationPath(), {
+                globOptions: {
+                    dot: true
+                }
+            }
         );
     }
 }

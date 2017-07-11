@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "A simple koa2 boilerplate based on webpack3",
   "scripts": {
-    "update": "git submodule update"
+    "init": "git submodule init",
+    "update": "git submodule update",
+    "test": "mocha"
   },
   "main": "app/index.js",
   "files": [
@@ -14,6 +16,7 @@
     "yeoman-generator"
   ],
   "dependencies": {
+    "lodash": "^4.17.4",
     "yeoman-generator": "^1.0.0"
   },
   "devDependencies": {

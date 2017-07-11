@@ -6,7 +6,8 @@ describe('koa2:app', function () {
 
     beforeEach(function () {
         this.koa2 = helpers
-            .run(path.join(__dirname, '../app'));
+            .run(path.join(__dirname, '../app'))
+            .withArguments(['testAppName']);
     });
 
     describe('default settings', function () {
@@ -22,7 +23,8 @@ describe('koa2:app', function () {
                 'package-lock.json',
                 'index.js',
                 'build/webpack.config.js',
-                'src/index.js'
+                'src/index.js',
+                '.babelrc'    
             ]);
         });
     });
