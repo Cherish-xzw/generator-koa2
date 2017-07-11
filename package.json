@@ -1,0 +1,19 @@
+{
+  "name": "generator-koa2",
+  "version": "0.1.0",
+  "description": "A simple koa2 boilerplate based on webpack3",
+  "scripts": {
+    "update": "git submodule update"
+  },
+  "main": "app/index.js",
+  "files": [
+    "generators"
+  ],
+  "author": "",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  }
+}
