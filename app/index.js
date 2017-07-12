@@ -8,8 +8,18 @@ module.exports = class extends Generator {
     }
 
     copyFiles() {
+        if (this.options.vue) {
+            return this.fs.copy(
+                this.templatePath('koa2-vue/**/!(package.json)'),
+                this.destinationPath(), {
+                    globOptions: {
+                        dot: true
+                    }
+                }
+            );
+        }
         this.fs.copy(
-            this.templatePath('**/!(package.json)'),
+            this.templatePath('koa2/**/!(package.json)'),
             this.destinationPath(), {
                 globOptions: {
                     dot: true
@@ -19,7 +29,7 @@ module.exports = class extends Generator {
     }
 
     replaceAppname() {
-        const pkg = this.fs.readJSON(this.templatePath('package.json'));
+        const pkg = this.fs.readJSON(this.templatePath('koa2/package.json'));
         pkg.name = this.appname;
         this.fs.writeJSON(this.destinationPath('package.json'), pkg);
     }

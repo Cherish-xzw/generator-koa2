@@ -1,3 +1,6 @@
-[submodule "app/templates"]
-	path = app/templates
+[submodule "add/templates/koa2"]
+	path = add/templates/koa2
 	url = git@github.com:Cherish-xzw/koa2-boilerplate.git
+[submodule "add/templates/koa2-vue"]
+	path = add/templates/koa2-vue
+	url = git@github.com:Cherish-xzw/koa2-vue-boilerplate.git

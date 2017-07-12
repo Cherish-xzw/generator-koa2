@@ -32,4 +32,20 @@ describe('koa2:app', function () {
             assert.fileContent('package.json', new RegExp(`"name": "${this.koa2.generator.appname}"`));
         });
     });
+
+    describe('--vue', function () {
+        beforeEach(function (done) {
+            this.koa2
+                .withOptions({
+                    vue: true
+                })
+                .on('end', done);
+        });
+
+        it('should generate vue files', function () {
+            assert.file([
+                'Vue+Koa.md'
+            ]);
+        });
+    });
 });
