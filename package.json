@@ -1,6 +1,6 @@
 {
   "name": "generator-upoem-koa2",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "A simple koa2 boilerplate based on webpack3",
   "scripts": {
     "init": "git submodule init",
@@ -9,7 +9,7 @@
   },
   "main": "app/index.js",
   "files": [
-    "generators"
+    "app"
   ],
   "author": "travisxu <zhengwei.xu@upchina.com>",
   "keywords": [
