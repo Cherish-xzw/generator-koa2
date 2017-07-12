@@ -5,7 +5,6 @@ module.exports = class extends Generator {
 
     constructor(args, opts) {
         super(args, opts);
-        this.sourceRoot(path.join(__dirname, '../templates'));
     }
 
     copyFiles() {

@@ -1,5 +1,5 @@
 {
-  "name": "generator-koa2",
+  "name": "generator-upoem-koa2",
   "version": "0.1.0",
   "description": "A simple koa2 boilerplate based on webpack3",
   "scripts": {
