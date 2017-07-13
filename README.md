@@ -41,4 +41,4 @@ $ yo upoem-koa2 --vue
 
 ## Learn More
 
-Learn more about [Koa2 template](http://gitlab.whup.com/UPOem-WebApplication/koa2-boilerplate/wikis/home#koa-boilerplate) and [Koa2-Vue template](http://gitlab.whup.com/UPOem-WebApplication/koa2-vue-boilerplate)
+Learn more about [Koa2 template](https://github.com/Cherish-xzw/koa2-boilerplate) and [Koa2-Vue template](https://github.com/Cherish-xzw/koa2-vue-boilerplate)
