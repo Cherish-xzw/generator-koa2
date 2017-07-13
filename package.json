@@ -1,6 +1,6 @@
 {
   "name": "generator-upoem-koa2",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "A simple koa2 boilerplate based on webpack3",
   "scripts": {
     "init": "git submodule init",
@@ -16,7 +16,6 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "lodash": "^4.17.4",
     "yeoman-generator": "^1.0.0"
   },
   "devDependencies": {
