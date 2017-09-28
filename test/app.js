@@ -44,7 +44,8 @@ describe('koa2:app', function () {
 
         it('should generate vue files', function () {
             assert.file([
-                'Vue+Koa.md'
+                'index.html',
+                'index.js'
             ]);
         });
     });

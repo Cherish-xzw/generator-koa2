@@ -1,10 +1,11 @@
 {
   "name": "generator-upoem-koa2",
-  "version": "0.1.6",
+  "version": "1.1.6",
   "description": "A simple koa2 boilerplate based on webpack3",
   "scripts": {
     "init": "git submodule init",
     "update": "git submodule update",
+    "sync": "git submodule foreach git pull origin master",
     "test": "mocha"
   },
   "main": "app/index.js",
