@@ -10,5 +10,5 @@ node_js:
 script:
   - npm test
 
-  addons:
+addons:
   ssh_known_hosts: github.com
