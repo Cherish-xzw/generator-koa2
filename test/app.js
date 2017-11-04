@@ -23,7 +23,7 @@ describe('koa2:app', function () {
                 'package-lock.json',
                 'index.js',
                 'build/webpack.config.js',
-                'src/index.js',
+                'src/app.js',
                 '.babelrc'
             ]);
         });
