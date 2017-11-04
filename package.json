@@ -6,7 +6,7 @@
     "init": "git submodule init",
     "update": "git submodule update",
     "sync": "git submodule foreach git pull origin master",
-    "test": "mocha --timeout 9999999"
+    "test": "nyc mocha --timeout 9999999 && nyc report --reporter=text-lcov | coveralls"
   },
   "main": "app/index.js",
   "files": [
@@ -23,7 +23,9 @@
     "yeoman-generator": "^1.0.0"
   },
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "mocha": "^3.4.2",
+    "nyc": "^11.3.0",
     "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.7.0"
   }
