@@ -1,8 +1,8 @@
 # Koa2 and Vue Generator 
 [![Build Status](https://travis-ci.org/Cherish-xzw/generator-koa2.svg?branch=master)](https://travis-ci.org/Cherish-xzw/generator-koa2)
 [![Coverage Status](https://coveralls.io/repos/github/Cherish-xzw/generator-koa2/badge.svg?branch=master)](https://coveralls.io/github/Cherish-xzw/generator-koa2?branch=master)
-[![npm](https://img.shields.io/npm/v/generator-upoem-koa2.svg)]()
-[![npm](https://img.shields.io/npm/dw/generator-upoem-koa2.svg)]()
+[![npm](https://img.shields.io/npm/v/generator-upoem-koa2.svg)](https://www.npmjs.com/package/generator-upoem-koa2)
+[![npm](https://img.shields.io/npm/dw/generator-upoem-koa2.svg)](https://www.npmjs.com/package/generator-upoem-koa2)
 > Yeoman generator for Koa2 and Vue.js - lets you quickly set up a project with sensible defaults and best practices.
 
 ## Usage
